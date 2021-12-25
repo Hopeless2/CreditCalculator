@@ -6,15 +6,15 @@ public class Calculator {
     }
 
     public double calculateMonthlyPayment(double total, int months) {
-        return 0.00;
+        return calculateTotalPayment(total, months) / 12;
     }
 
     public double calculateTotalPayment(double total, int months) {
-        return 0.00;
+        return total + (total * months * (CREDIT_PERCENT_PER_YEAR / (12 * 100)));
     }
 
     public double calculateOverpayment(double total, int months) {
-        return 0.00;
+        return calculateTotalPayment(total, months) - total;
     }
 
 

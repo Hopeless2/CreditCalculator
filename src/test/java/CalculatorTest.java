@@ -30,7 +30,7 @@ public class CalculatorTest {
     @Test
     public void calculateMonthlyPaymentTest_success() {
         //given:
-        double expected = 4_583.33;
+        double expected = 4_583.333333333;
         double total = 50_000.00;
         int months = 12;
         //when:
